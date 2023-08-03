@@ -1,3 +1,6 @@
+/*Fonts importados*/
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+
 :root{
     /*Colores de fondo*/
     --color_fondo_calculadora: rgb(43, 43, 43);
@@ -13,19 +16,35 @@
 
 }
 
+body{
+    background-color: white;
+    background-image: linear-gradient(to right, rgb(0, 180, 219), rgb(0, 131, 176));
+}
+
+#titulo{
+    height: 100px;
+    width: 80%;
+    margin: 0px auto;
+
+    /*TODO: Agregar sombras y realizar cambios en el color de fondo del box del titulo.*/
+    text-align: center;
+    font-family: 'Squada One', cursive;
+    vertical-align: 100px;
+    font-size: x-large;
+
+    border: 5px dashed white;
+    background: rgba(214, 221, 220, 0.671);
+    
+}
+
+
 .contenedor{
     display: grid;
     grid-template-columns: repeat(12, 50px);
     grid-template-rows: repeat(9, 100px);
 }
 
-#titulo{
-    display: inherit;
-    height: 100px;
-    grid-column: 1 / 12;
-    grid-row: 1 / span 2;
-    text-align: center;
-}
+
 
 #calculadora{
     display: grid;
